@@ -1,5 +1,5 @@
 export default function Category() {
-  returnv(
+  return (
     <div className="Category">
       <h1>Category</h1>
     </div>
