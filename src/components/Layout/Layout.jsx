@@ -10,7 +10,6 @@ export default function Layout(props) {
         <Logo />
         <Nav />
       </header>
-      <aside>ASIDE</aside>
       <main>{props.children}</main>
       <aside>
         <CategoryList />
