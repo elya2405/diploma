@@ -9,9 +9,12 @@ export default function Category() {
   //простой метод
   //const match = useMatch("/category/:path");
   //match.params.path;
+
+  const category = categories.find((category) => params.path === category.path);
+
   return (
     <div className="Category">
-      <h1>Category</h1>
+      <h1>{category.name}</h1>
     </div>
   );
 }
