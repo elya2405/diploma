@@ -7,7 +7,7 @@ import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
-import { categoryCollection } from "./firebase";
+import { categoryCollection, productCollection } from "./firebase";
 
 export const AppContext = createContext({
   categories: [],
@@ -34,6 +34,21 @@ export default function App() {
       });
       //задать новый массив как состояние компонента
       setCategories(newCategories);
+    });
+    getDocs(productCollection).then((snapshot) => {
+      //продукты будут хранится в snapshot.docs
+
+      //создать массив для продуктов
+      const newProducts = [];
+      //заполнить массив данными из списка продуктов
+      snapshot.docs.forEach((doc) => {
+        const product = doc.data();
+        product.id = doc.id;
+
+        newProducts.push(product);
+      });
+      //задать новый массив как состояние компонента
+      setProducts(newProducts);
     });
   }, []);
 
