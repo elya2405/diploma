@@ -9,6 +9,8 @@
   flex-grow: 0;
   flex-shrink: 0;
   background-color: burlywood;
+  display: flex;
+  align-items: center;
 }
 .Layout aside {
   flex: 20% 0 0;

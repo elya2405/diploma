@@ -7,8 +7,8 @@ export default function Layout(props) {
   return (
     <div className="Layout">
       <header>
-        <Logo />
         <Nav />
+        <Logo />
       </header>
       <main>{props.children}</main>
       <aside>
