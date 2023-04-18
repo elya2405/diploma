@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
+import "./CartList.css"
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
