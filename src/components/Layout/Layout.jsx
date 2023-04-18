@@ -1,3 +1,4 @@
+import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
@@ -8,6 +9,7 @@ export default function Layout(props) {
     <div className="Layout">
       <header>
         <Nav />
+        <CartLink />
         <Logo />
       </header>
       <main>{props.children}</main>
