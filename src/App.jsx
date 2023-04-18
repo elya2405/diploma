@@ -12,11 +12,18 @@ import { categoryCollection, productCollection } from "./firebase";
 export const AppContext = createContext({
   categories: [],
   products: [],
+
+  //корзина
+  cart: {},
+  setCart: () => {},
 });
 
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+
+  //корзина
+  const [cart, setCart] = useState({});
   //выполнить эту функцию только один раз
   useEffect(() => {
     //получить категории из списка категорий
@@ -54,7 +61,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
