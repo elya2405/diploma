@@ -5,8 +5,24 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  border: 2px solid grey;
+  padding: 10px;
 }
 .ProductList .Product img {
   width: 100%;
+  height: 200px;
+}
+.ProductList .Product .Product-name {
+  text-decoration: none;
+  color: black;
+}
+.ProductList .Product .Product-content {
+  display: flex;
+}
+.ProductList .Product span {
+  position: relative;
+  font-weight: 700;
+  top: -25px;
+  right: 3px;
+  border: 1px solid white;
+  background-color: white;
 }
