@@ -4,11 +4,16 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
-import { categoryCollection, onAuthChange, productCollection } from "./firebase";
+import {
+  categoryCollection,
+  onAuthChange,
+  productCollection,
+} from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import Auth from "./components/Auth/Auth";
+import ThankYou from "./pages/ThankYou";
 
 export const AppContext = createContext({
   categories: [],
@@ -78,14 +83,16 @@ export default function App() {
       setProducts(newProducts);
     });
 
-    onAuthChange(user => {
+    onAuthChange((user) => {
       setUser(user);
     });
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -93,6 +100,7 @@ export default function App() {
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/thank-you" element={<ThankYou />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
