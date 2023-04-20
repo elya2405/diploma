@@ -8,6 +8,7 @@ import { categoryCollection, onAuthChange, productCollection } from "./firebase"
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
+import Auth from "./components/Auth/Auth";
 
 export const AppContext = createContext({
   categories: [],
