@@ -24,3 +24,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+.CategoryList h1 {
+  text-align: center;
+  color: black;
+}
