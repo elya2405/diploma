@@ -7,16 +7,15 @@
 .Layout header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  background-color: bisque;
+ 
 }
 .Layout aside {
-  flex: 20% 0 0;
-  border: 1px solid black;
+  flex: 100% 0 0;
+
 }
 .Layout main {
   flex: auto 1 1;
