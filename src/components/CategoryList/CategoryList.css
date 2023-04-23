@@ -1,14 +1,22 @@
-
 .CategoryList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style-type: none;
-  margin-left: -25px;
+  margin-left: -35px;
 }
 .CategoryList ul li a {
   text-decoration: none;
   font-size: 16px;
   color: black;
-  padding: 5px;
+  text-align: center;
+  font-size: 18px;
 }
-.CategoryList ul li {
-  margin-bottom: 20px;
+.CategoryList img {
+  width: 150px;
+}
+.CategoryList .Category {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
