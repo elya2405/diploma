@@ -1,3 +1,6 @@
+.CategoryList {
+  border: 1px solid black;
+}
 .CategoryList ul {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +14,7 @@
   color: black;
   text-align: center;
   font-size: 18px;
+  border: 1px solid grey;
 }
 .CategoryList img {
   width: 150px;
