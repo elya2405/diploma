@@ -13,7 +13,10 @@ export default function CategoryList() {
     .sort((a, b) => a.weight - b.weight)
     .map((category) => (
       <li key={category.id}>
-        <NavLink to={"/category/" + category.path}>{category.name}</NavLink>
+        <NavLink className="Category" to={"/category/" + category.path}>
+          <img src={category.picture} alt={category.name} />
+          {category.name}
+        </NavLink>
       </li>
     ));
   return (
