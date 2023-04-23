@@ -11,11 +11,9 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
- 
 }
 .Layout aside {
   flex: 100% 0 0;
-
 }
 .Layout main {
   flex: auto 1 1;
