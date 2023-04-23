@@ -21,6 +21,7 @@ export default function CategoryList() {
     ));
   return (
     <div className="CategoryList">
+      <h1>Category</h1>
       <ul>{output}</ul>
     </div>
   );
