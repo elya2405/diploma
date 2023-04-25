@@ -6,9 +6,10 @@
 .ProductList .Product {
   max-width: 200px;
 }
-.ProductList .Product .Product-content{
+.ProductList .Product .Product-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 20px;
 }
 .ProductList .Product img {
   width: 100%;
@@ -20,6 +21,4 @@
 }
 .ProductList .Product span {
   font-weight: 700;
-  border: 1px solid white;
-  background-color: white;
 }
