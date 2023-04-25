@@ -8,6 +8,7 @@ import {
   categoryCollection,
   onAuthChange,
   productCollection,
+  orderCollection
 } from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
@@ -19,9 +20,11 @@ import About from "./pages/About";
 import Delivery from "./pages/Delivery";
 import Oreders from "./pages/Orders";
 
+
 export const AppContext = createContext({
   categories: [],
   products: [],
+  orders: [],
 
   // корзина
   cart: {},
@@ -33,6 +36,7 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   // состояние которое хранит информацию пользователя
   const [user, setUser] = useState(null);
@@ -87,6 +91,24 @@ export default function App() {
       setProducts(newProducts);
     });
 
+    // получить продукты из списка продуктов
+    getDocs(orderCollection).then((snapshot) => {
+      // продукты будут храниться в snapshot.docs
+
+      // создать массив для продуктов
+      const newOrders = [];
+      // заполнить массив данными из списка продвук
+      snapshot.docs.forEach((doc) => {
+        // doc = продукт
+        const orders = doc.data();
+        orders.id = doc.id;
+
+        newOrders.push(orders);
+      });
+      // задать новый массив как состояние комапо
+      setOrders(newOrders);
+    });
+
     onAuthChange((user) => {
       setUser(user);
     });
@@ -95,7 +117,7 @@ export default function App() {
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user }}
+        value={{ categories, products, cart, setCart, user, orders }}
       >
         <Layout>
           <Routes>
