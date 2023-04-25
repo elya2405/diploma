@@ -18,7 +18,7 @@ import ThankYou from "./pages/ThankYou";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Delivery from "./pages/Delivery";
-import Oreders from "./pages/Orders";
+import Orders from "./pages/Orders";
 
 
 export const AppContext = createContext({
