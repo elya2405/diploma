@@ -129,7 +129,7 @@ export default function App() {
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/orders" element={<Oreders />} />
+            <Route path="/orders" element={<Orders />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
