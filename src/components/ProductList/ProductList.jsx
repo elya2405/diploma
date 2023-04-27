@@ -16,8 +16,8 @@ export default function ProductList({ category }) {
           <Link className="Product-name" to={"/product/" + product.path}>
             {product.name}
           </Link>
+          <AddToCart className="Addtocard" product={product} />
         </div>
-        <AddToCart product={product} />
       </div>
     ));
   return <div className="ProductList">{output}</div>;
