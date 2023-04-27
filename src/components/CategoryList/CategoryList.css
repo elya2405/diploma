@@ -1,6 +1,3 @@
-.CategoryList {
-  border: 1px solid black;
-}
 .CategoryList ul {
   display: flex;
   flex-wrap: wrap;
