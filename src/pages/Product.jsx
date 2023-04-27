@@ -18,6 +18,7 @@ export default function Product() {
     <div className="Product">
       <h1>{product.name}</h1>
       <img src={product.picture} alt={product.name} />
+      <p>{product.description}</p>
       <span>{product.price} som</span>
       <AddToCart product={product} />
     </div>
