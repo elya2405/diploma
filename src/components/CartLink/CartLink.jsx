@@ -12,7 +12,7 @@ export default function CartLink() {
     <div className="CartLink">
       <Link to="/cart">
         <img
-          src="https://www.reebok.com/us/women-clothing#"
+          src="icon.png"
           alt="icon"
         />
         [{total}]
