@@ -17,8 +17,12 @@ export default function Auth() {
   if (user) {
     output = (
       <span>
-        <Link className="User" to="/orders">{user.displayName}</Link>
-        <button onClick={logOut}>Sign out</button>
+        <div className="UserAndBtn">
+          <button onClick={logOut}>Sign out</button>
+          <Link className="User" to="/orders">
+            {user.displayName}
+          </Link>
+        </div>
       </span>
     );
   }

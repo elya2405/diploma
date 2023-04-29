@@ -1,6 +1,7 @@
-.Auth {
+.Auth .UserAndBtn {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 .Auth .User {
   text-decoration: none;
@@ -10,7 +11,7 @@
   background-color: white;
   border-color: grey;
   font-size: 16px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   background-color: grey;
   color: white;
   cursor: pointer;
