@@ -2,4 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 5px grey;
+}
+.OrderForm input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding: 10px 20px;
 }
