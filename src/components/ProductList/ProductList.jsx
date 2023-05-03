@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
+import AddProduct from "../AddProduct/AddProduct";
 import AddToCart from "../AddToCart/AddToCart";
 import "./ProductList.css";
 export default function ProductList({ category }) {
@@ -20,5 +21,10 @@ export default function ProductList({ category }) {
         </div>
       </div>
     ));
-  return <div className="ProductList">{output}</div>;
+  return (
+    <div className="ProductList">
+      {output}
+      <AddProduct/>
+    </div>
+  );
 }
