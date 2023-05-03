@@ -1,8 +1,9 @@
-import { getDoc, getDocs } from "firebase/firestore";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
-import { categoryCollection } from "../../firebase";
+
+import AddCategory from "../AddCategory/AddCategory";
+import DeleteCategory from "../DeleteCategory/DeleteCategory";
 import "./CategoryList.css";
 
 export default function CategoryList() {
@@ -17,12 +18,14 @@ export default function CategoryList() {
           <img src={category.picture} alt={category.name} />
           {category.name}
         </NavLink>
+        <DeleteCategory category={category} />
       </li>
     ));
   return (
     <div className="CategoryList">
       <h1>Category</h1>
       <ul>{output}</ul>
+      <AddCategory />
     </div>
   );
 }
