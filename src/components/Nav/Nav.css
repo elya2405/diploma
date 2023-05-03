@@ -12,12 +12,12 @@
   font-size: 16px;
 }
 .Nav ul li a:hover {
-  box-shadow: 0 0 5px grey;
-  border-radius: 30px;
+  /*border-bottom: 2px solid black;*/
+  border-bottom: 2px solid grey;
 }
 .Nav ul li a:focus {
   box-shadow: inset 400px 0 0 0 grey;
-  border-radius: 30px;
+  border-radius: 3px;
   color: white;
   cursor: pointer;
   -webkit-transition: ease-out 0.5s;
