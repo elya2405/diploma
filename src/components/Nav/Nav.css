@@ -24,3 +24,9 @@
   -moz-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
+
+@media (max-width: 650px) {
+  .Nav ul {
+    flex-direction: column;
+  }
+} 
