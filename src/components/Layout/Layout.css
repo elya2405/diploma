@@ -21,3 +21,9 @@
 .Layout footer {
   flex: 100% 0 0;
 }
+@media (max-width: 650px) {
+  .Layout header > .Nav {
+    display: none;
+  }
+} 
+
