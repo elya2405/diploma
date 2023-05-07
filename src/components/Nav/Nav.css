@@ -13,7 +13,8 @@
 }
 .Nav ul li a:hover {
   /*border-bottom: 2px solid black;*/
-  border-bottom: 2px solid grey;
+  border: none;
+  border-bottom: 1px solid grey;
 }
 .Nav ul li a:focus {
   box-shadow: inset 400px 0 0 0 grey;
