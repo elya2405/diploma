@@ -1,3 +1,7 @@
+.Auth {
+  position: absolute;
+  left: 730px;
+}
 .Auth .SignIn {
   display: flex;
   flex-direction: column;
@@ -11,12 +15,16 @@
   text-decoration: none;
   color: black;
 }
-.Auth .User {
+.Auth .SignOut {
+  display: flex;
+  flex-direction: column;
+}
+.Auth .SignOut img {
+  width: 80px;
+  margin-top: 15px;
+}
+.Auth .SignOut .User {
   text-decoration: none;
   color: black;
-}
-.Auth button {
-  font-size: 16px;
-  border: none;
-  background-color: transparent;
+  margin-left: 10px;
 }
