@@ -1,21 +1,22 @@
-.Auth .UserAndBtn {
+.Auth .SignIn {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+}
+.Auth .SignIn img {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.Auth .SignIn a {
+  text-decoration: none;
+  color: black;
 }
 .Auth .User {
   text-decoration: none;
   color: black;
 }
 .Auth button {
-  background-color: white;
-  border-color: grey;
   font-size: 16px;
-  padding: 5px 20px;
-  background-color: grey;
-  color: white;
-  cursor: pointer;
-}
-.Auth button:hover {
-  box-shadow: 0 0 5px black;
+  border: none;
+  background-color: transparent;
 }
