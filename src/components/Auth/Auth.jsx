@@ -10,14 +10,23 @@ export default function Auth() {
   // показывается гостю
   let output = (
     <span>
-      Guest <button onClick={logIn}>Sign in</button>
+      <div className="SignIn">
+        <img
+          onClick={logIn}
+          className="SignInIcon"
+          src="/src/assets/sign-in-icon.png"
+        />
+        <a href="#" onClick={logIn}>
+          Sign in
+        </a>
+      </div>
     </span>
   );
   // показывается пользователю
   if (user) {
     output = (
       <span>
-        <div className="UserAndBtn">
+        <div className="SignOut">
           <button onClick={logOut}>Sign out</button>
           <Link className="User" to="/orders">
             {user.displayName}
