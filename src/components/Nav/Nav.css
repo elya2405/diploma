@@ -1,4 +1,6 @@
-
+.Nav {
+  margin-left: -40px;
+}
 .Nav ul {
   display: flex;
   list-style-type: none;
@@ -13,7 +15,6 @@
   font-size: 16px;
 }
 .Nav ul li a:hover {
-  /*border-bottom: 2px solid black;*/
   border: none;
   border-bottom: 1px solid grey;
 }
@@ -31,4 +32,4 @@
   .Nav ul {
     flex-direction: column;
   }
-} 
+}
