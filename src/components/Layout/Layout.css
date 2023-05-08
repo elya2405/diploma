@@ -11,6 +11,13 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.Layout .Image-for-header {
+  margin-top: -110px;
+  width: 100%;
+  object-fit: cover;
 }
 .Layout aside {
   flex: 100% 0 0;
@@ -21,9 +28,12 @@
 .Layout footer {
   flex: 100% 0 0;
 }
+.Layout .Together {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 650px) {
   .Layout header > .Nav {
     display: none;
   }
-} 
-
+}
