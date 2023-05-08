@@ -27,7 +27,11 @@ export default function Auth() {
     output = (
       <span>
         <div className="SignOut">
-          <button onClick={logOut}>Sign out</button>
+          <img
+            onClick={logOut}
+            className="SignOut"
+            src="/src/assets/sign-out-icon.png"
+          />
           <Link className="User" to="/orders">
             {user.displayName}
           </Link>
