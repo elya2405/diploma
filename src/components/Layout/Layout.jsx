@@ -21,12 +21,16 @@ export default function Layout(props) {
         <Logo />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        <Auth />
-        <CartLink />
+        <div className="Together">
+          <Auth />
+          <CartLink />
+        </div>
       </header>
-      <aside>
-        <CategoryList />
-      </aside>
+      <img
+        className="Image-for-header"
+        src="/src/assets/header-background2.png"
+      />
+
       <main>{props.children}</main>
 
       <footer>FOOTER</footer>
