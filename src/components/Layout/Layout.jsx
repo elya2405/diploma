@@ -3,7 +3,6 @@ import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import Auth from "../Auth/Auth";
 import CartLink from "../CartLink/CartLink";
-import CategoryList from "../CategoryList/CategoryList";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
 import Logo from "./Logo/Logo";
