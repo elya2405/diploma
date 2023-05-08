@@ -20,10 +20,8 @@ export default function Layout(props) {
         <Logo />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        <div className="Together">
-          <Auth />
-          <CartLink />
-        </div>
+        <Auth />
+        <CartLink />
       </header>
       <img
         className="Image-for-header"
