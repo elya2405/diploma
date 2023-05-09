@@ -19,8 +19,27 @@
   width: 100%;
   object-fit: cover;
 }
+.Layout .ggg {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.Layout .ggg span {
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.Layout .FirstSlogan {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: -250px;
+  padding: 1px 0;
+}
 .Layout aside {
   flex: 100% 0 0;
+  margin-top: -60px;
 }
 .Layout main {
   flex: auto 1 1;
