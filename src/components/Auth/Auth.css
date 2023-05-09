@@ -1,6 +1,5 @@
 .Auth {
-  position: absolute;
-  left: 730px;
+  margin-right: -60px;
 }
 .Auth .SignIn {
   display: flex;
