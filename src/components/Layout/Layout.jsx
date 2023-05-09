@@ -17,16 +17,15 @@ export default function Layout(props) {
     <div className="Layout">
       <header>
         <Nav />
+        <div className="ggg">
         <Logo />
+        <span>Sportwear Store</span>
+        </div>
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <Auth />
         <CartLink />
       </header>
-      <img
-        className="Image-for-header"
-        src="/src/assets/header-background2.png"
-      />
 
       <main>{props.children}</main>
 
