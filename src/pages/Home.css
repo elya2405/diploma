@@ -1,0 +1,6 @@
+.Cart1 {
+  display: flex;
+}
+.Cart1 .CartImg img {
+  max-width: 200px;
+}
