@@ -19,14 +19,14 @@
   width: 100%;
   object-fit: cover;
 }
-.Layout .ggg {
+.Layout .Store {
   display: flex;
   flex-direction: column;
-  font-weight: 600;
 }
-.Layout .ggg span {
-  margin-top: -20px;
-  margin-left: -10px;
+.Layout .Store span {
+  margin-top: -15px;
+  margin-left: -7px;
+  font-weight: 600;
 }
 .Layout .FirstSlogan {
   background-color: white;
