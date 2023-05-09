@@ -17,7 +17,7 @@ export default function Layout(props) {
     <div className="Layout">
       <header>
         <Nav />
-        <div className="ggg">
+        <div className="Store">
         <Logo />
         <span>Sportwear Store</span>
         </div>
