@@ -1,4 +1,5 @@
 import CategoryList from "../components/CategoryList/CategoryList";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -13,8 +14,15 @@ export default function Home() {
       <aside>
         <CategoryList />
       </aside>
-      <h1>Welcom to my Sportwear store.</h1>
-      <p>This is my very aestetic shop.</p>
+
+      <div className="Cart1">
+        <div className="CartContent">
+          <h1>gyukfuk</h1>
+        </div>
+        <div className="CartImg">
+          <img src="/src/assets/image-for-home1.jpg" />
+        </div>
+      </div>
     </div>
   );
 }
