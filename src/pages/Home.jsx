@@ -17,10 +17,10 @@ export default function Home() {
 
       <div className="Cart1">
         <div className="CartContent">
-          <h1>gyukfuk</h1>
+          <h1>Your body deserves to look good</h1>
         </div>
         <div className="CartImg">
-          <img src="/src/assets/image-for-home1.jpg" />
+          <img src="/src/assets/image-for-home1.png" />
         </div>
       </div>
     </div>
