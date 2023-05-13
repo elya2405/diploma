@@ -14,7 +14,7 @@
   position: relative;
   z-index: 1;
 }
-.Layout .Image-for-header {
+.Layout .Image_for_header {
   margin-top: -110px;
   width: 100%;
   object-fit: cover;
