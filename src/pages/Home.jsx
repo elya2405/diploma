@@ -18,15 +18,18 @@ export default function Home() {
       <h1>Here you will find</h1>
       <div className="Carts">
         <div className="Cart_1">
-          <h3>comfort</h3>
+          <h3>Сomfort</h3>
+          <p>Comfort in every movement</p>
           <img src={image_for_cart_1} />
         </div>
         <div className="Cart_2">
-          <h3>style</h3>
+          <h3>Style</h3>
+          <p>A style that you will fall in love with</p>
           <img src={image_for_cart_2} />
         </div>
         <div className="Cart_3">
           <h3>large selection</h3>
+          <p>You will enjoy shopping with us.</p>
           <img src={image_for_cart_3} />
         </div>
       </div>
