@@ -3,7 +3,8 @@ import "./Auth.css";
 import { AppContext } from "../../App";
 import { logIn, logOut } from "../../firebase";
 import { Link } from "react-router-dom";
-import icon from "/src/assets/sign-in-icon.png";
+import icon_1 from "/src/assets/sign-in-icon.png";
+import icon_2 from "/src/assets/sign-out-icon.png";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -12,7 +13,7 @@ export default function Auth() {
   let output = (
     <span>
       <div className="SignIn">
-        <img onClick={logIn} className="SignInIcon" src={icon} />
+        <img onClick={logIn} className="SignInIcon" src={icon_1} />
         <a href="#" onClick={logIn}>
           Sign in
         </a>
@@ -24,11 +25,7 @@ export default function Auth() {
     output = (
       <span>
         <div className="SignOut">
-          <img
-            onClick={logOut}
-            className="SignOut"
-            src="/src/assets/sign-out-icon.png"
-          />
+          <img onClick={logOut} className="SignOut" src={icon_2} />
           <Link className="User" to="/orders">
             {user.displayName}
           </Link>
