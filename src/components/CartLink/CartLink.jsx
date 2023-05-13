@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartLink.css";
+import basket_icon from "/src/assets/icon.png";
 
 export default function CartLink() {
   const { cart } = useContext(AppContext);
@@ -11,7 +12,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <Link to="/cart">
-        <img src="/src/assets/icon.png" alt="icon" />
+        <img src={basket_icon} alt="icon" />
         {total}
       </Link>
     </div>
