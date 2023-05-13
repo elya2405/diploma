@@ -43,6 +43,7 @@ const AddCategory = () => {
         placeholder="Category name"
         onChange={onChangeCategory}
       />
+
       <button onClick={onAddCategory}>+</button>
     </div>
   );
