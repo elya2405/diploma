@@ -13,7 +13,12 @@ export default function Auth() {
   let output = (
     <span>
       <div className="SignIn">
-        <img onClick={logIn} className="SignInIcon" src={icon_1} />
+        <img
+          onClick={logIn}
+          className="SignInIcon"
+          src={icon_1}
+          alt="sign in icon"
+        />
         <a href="#" onClick={logIn}>
           Sign in
         </a>
@@ -25,7 +30,12 @@ export default function Auth() {
     output = (
       <span>
         <div className="SignOut">
-          <img onClick={logOut} className="SignOut" src={icon_2} />
+          <img
+            onClick={logOut}
+            className="SignOut"
+            src={icon_2}
+            alt="sign out"
+          />
           <Link className="User" to="/orders">
             {user.displayName}
           </Link>
