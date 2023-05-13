@@ -1,10 +1,43 @@
+.Section_1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.Section_1 h1 {
+  text-align: center;
+}
 .Carts {
   display: flex;
   justify-content: space-between;
 }
 .Carts img {
   max-width: 250px;
+  border-radius: 5px;
 }
-h1 {
+.Carts h3 {
+  background-color: rgb(217, 209, 209);
+  color: black;
+}
+.Carts h3,
+p {
   text-align: center;
+}
+.Store_name {
+  display: flex;
+  background-image: url(src/assets/image_for_home_1.png);
+  background-size: cover;
+  height: 700px;
+}
+.Vertical_inscription p {
+  position: relative;
+  left: 870px;
+  background-color: grey;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+}
+.Distance {
+  position: relative;
+  top: 23px;
 }
