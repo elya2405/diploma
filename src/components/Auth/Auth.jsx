@@ -3,6 +3,7 @@ import "./Auth.css";
 import { AppContext } from "../../App";
 import { logIn, logOut } from "../../firebase";
 import { Link } from "react-router-dom";
+import icon from "/src/assets/sign-in-icon.png";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -11,11 +12,7 @@ export default function Auth() {
   let output = (
     <span>
       <div className="SignIn">
-        <img
-          onClick={logIn}
-          className="SignInIcon"
-          src="/src/assets/sign-in-icon.png"
-        />
+        <img onClick={logIn} className="SignInIcon" src={icon} />
         <a href="#" onClick={logIn}>
           Sign in
         </a>
