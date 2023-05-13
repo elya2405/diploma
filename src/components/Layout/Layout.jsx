@@ -18,8 +18,8 @@ export default function Layout(props) {
       <header>
         <Nav />
         <div className="Store">
-        <Logo />
-        <span>Sportwear Store</span>
+          <Logo />
+          <span>Sportwear Store</span>
         </div>
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
