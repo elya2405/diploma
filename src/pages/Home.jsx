@@ -1,15 +1,15 @@
 import CategoryList from "../components/CategoryList/CategoryList";
 import "./Home.css";
-import image from "../assets/header-background.png";
+import image from "../assets/image_for_home_header.png";
 import image_for_cart_1 from "../assets/cart_1_img.jpg";
 import image_for_cart_2 from "../assets/cart_2_img.jpg";
 import image_for_cart_3 from "../assets/cart_3_img.jpg";
-import image_for_home_1 from "../assets/image_for_home_1.png";
+import image_for_home_2 from "../assets/image_for_home_2.jpg";
 
 export default function Home() {
   return (
     <div className="Home">
-      <img className="Image_for_header" src={image} />
+      <img className="Image_for_home_header" src={image} />
       <div className="FirstSlogan">
         <h1>Sportswear that never goes out of fashion</h1>
       </div>
@@ -20,7 +20,7 @@ export default function Home() {
         <h1>Here you will find</h1>
         <div className="Carts">
           <div className="Cart_1">
-            <h3>omfort</h3>
+            <h3>Comfort</h3>
             <p>Comfort in every movement</p>
             <img src={image_for_cart_1} />
           </div>
@@ -38,24 +38,10 @@ export default function Home() {
       </section>
 
       <section className="Store_name">
-        <div className="Vertical_inscription">
-          <p>S</p>
-          <p>P</p>
-          <p>O</p>
-          <p>R</p>
-          <p>T</p>
-          <p>W</p>
-          <p>E</p>
-          <p>A</p>
-          <p>R</p>
-          <div className="Distance">
-            <p>S</p>
-            <p>T</p>
-            <p>O</p>
-            <p>R</p>
-            <p>E</p>
-          </div>
-        </div>
+        <p>
+          Only we give the lowest prices for our products, and if you find it
+          even cheaper, we will lower the price even more.
+        </p>
       </section>
     </div>
   );
