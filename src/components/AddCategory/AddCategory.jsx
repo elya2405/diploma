@@ -2,10 +2,12 @@ import { addDoc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { categoryCollection } from "../../firebase";
 import { AppContext } from "../../App";
+import { uploadCategoryPhoto } from "../../firebase";
 
-const AddCategory = () => {
+export default function AddCategory({}) {
   const { user } = useContext(AppContext);
   const [category, setCategory] = useState("");
+  const [picture, setPicture] = useState(null);
 
   if (!user || !user.isAdmin) {
     return null;
@@ -13,6 +15,11 @@ const AddCategory = () => {
 
   function onChangeCategory(event) {
     setCategory(event.target.value);
+  }
+
+  function onChangePicture(event) {
+    const file = event.target.files[0];
+    setPicture(file);
   }
 
   function onAddCategory() {
@@ -25,13 +32,22 @@ const AddCategory = () => {
 
       return;
     }
+    uploadCategoryPhoto(picture)
+        .then((pictureUrl) =>
+          addDoc(categoryCollection, {
+            name: name,
+            picture: pictureUrl,
+            path: name.replaceAll(" ", "-").toLocaleLowerCase(),
+          })
+        )
+        .then(() => {
+          setName("");
 
-    addDoc(categoryCollection, {
-      name: name,
-      path: name.replaceAll(" ", "-").toLocaleLowerCase(),
-    }).then(() => {
-      setCategory("");
-    });
+          setPicture(null);
+        })
+        .catch((error) => {
+          console.log("Failed to add category:", error);
+        });
   }
 
   return (
@@ -44,9 +60,12 @@ const AddCategory = () => {
         onChange={onChangeCategory}
       />
 
+      <label>
+        Picture:
+        <input type="file" name="picture" onChange={onChangePicture} required />
+      </label>
+
       <button onClick={onAddCategory}>+</button>
     </div>
   );
-};
-
-export default AddCategory;
+}
