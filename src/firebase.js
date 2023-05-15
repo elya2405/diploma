@@ -76,3 +76,11 @@ export const uploadProductPhoto = async (file) => {
   const url = await getDownloadURL(storageRef);
   return url;
 };
+
+export const uploadCategoryPhoto = async (file) => {
+  const storageRef = ref(storage, `categories/${file.name}`);
+  await uploadBytes(storageRef, file);
+
+  const url = await getDownloadURL(storageRef);
+  return url;
+};
