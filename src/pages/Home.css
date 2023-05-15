@@ -19,25 +19,32 @@
   background-color: rgb(217, 209, 209);
   color: black;
 }
-.Carts h3,
-p {
+.Carts h3 {
   text-align: center;
 }
+.Carts p {
+  text-align: center;
+}
+.Store_name img {
+  width: 40%;
+}
 .Store_name {
-  display: flex;
-  background-image: url(src/assets/image_for_home_1.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 600px;
+  width: 100%;
+  background-image: url(src/assets/image_for_home_1.png);
 }
-.Vertical_inscription p {
+.Store_name p {
+  text-align: center;
+  font-size: 25px;
   position: relative;
-  left: 870px;
-  background-color: grey;
-  color: white;
-  padding: 6px;
-  border-radius: 50%;
-}
-.Distance {
-  position: relative;
-  top: 23px;
+  left: 530px;
+  top: 50px;
+  width: 40%;
+  font-weight: 600;
+  line-height: 2;
+  background-color: white;
+  opacity: 0.8;
+  padding: 10px;
 }
