@@ -14,10 +14,16 @@
   position: relative;
   z-index: 1;
 }
-.Layout .Image_for_header {
+.Layout .Image_for_home_header {
   margin-top: -110px;
   width: 100%;
   object-fit: cover;
+}
+.Layout .Image_for_about_header {
+  margin-top: -110px;
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
 }
 .Layout .Store {
   display: flex;
