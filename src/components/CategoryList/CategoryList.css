@@ -13,7 +13,7 @@
   border: 1px solid grey;
 }
 .CategoryList img {
-  width: 150px;
+  width: 180px;
 }
 .CategoryList .Category {
   display: flex;
@@ -23,4 +23,5 @@
 .CategoryList h1 {
   text-align: center;
   color: black;
+  text-transform: uppercase;
 }
