@@ -44,7 +44,7 @@
   background-size: 1000px;
   background-position: right;
   height: 800px;
-  background-image: url(src/assets/image_for_home_1.png);
+  background-image: url(../assets/image_for_home_1.png);
 }
 .Store_name p {
   display: inline-block;
