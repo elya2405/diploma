@@ -6,3 +6,10 @@
 .CartList .CartItem img {
   width: 80px;
 }
+.CategoryList ul a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.CategoryList img:hover {
+  transform: scale(0.9);
+}
