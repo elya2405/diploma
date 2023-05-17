@@ -6,41 +6,51 @@
 }
 .Section_1 h1 {
   text-align: center;
+  font-size: 25px;
+  color: black;
+  text-transform: uppercase;
 }
 .Carts {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .Carts img {
-  max-width: 250px;
-  border-radius: 5px;
+  max-width: 265px;
+  box-shadow: 0 0 15px grey;
 }
 .Carts h3 {
-  background-color: rgb(217, 209, 209);
+  padding-top: 10px;
+  text-transform: uppercase;
   color: black;
-}
-.Carts h3 {
   text-align: center;
+}
+.Carts .Cart_1_content {
+  background-color: rgb(177, 175, 175);
+  opacity: 0.9;
+
+  box-shadow: 0 0 10px grey;
 }
 .Carts p {
   text-align: center;
+  margin-top: -20px;
+  padding: 10px;
 }
 .Store_name img {
   width: 40%;
 }
 .Store_name {
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  width: 100%;
+  background-size: 1000px;
+  background-position: right;
+  height: 800px;
   background-image: url(src/assets/image_for_home_1.png);
 }
 .Store_name p {
+  display: inline-block;
+margin-top: 30px;
   text-align: center;
   font-size: 25px;
-  position: relative;
-  left: 530px;
-  top: 50px;
   width: 40%;
   font-weight: 600;
   line-height: 2;
