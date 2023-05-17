@@ -48,13 +48,14 @@
 }
 .Store_name p {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-left: 80px;
   text-align: center;
   font-size: 25px;
   width: 40%;
   font-weight: 600;
   line-height: 2;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 10px;
 }
