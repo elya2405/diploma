@@ -1,7 +1,4 @@
-.Nav {
- 
- 
-}
+
 .Nav li {
   display: inline-block;
   position: relative;
@@ -18,7 +15,7 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 1px;
   bottom: -5px;
   left: 0;
   background-color: black;
