@@ -4,6 +4,7 @@ import image from "../assets/image_for_home_header.png";
 import image_for_cart_1 from "../assets/cart_1_img.jpg";
 import image_for_cart_2 from "../assets/cart_2_img.jpg";
 import image_for_cart_3 from "../assets/cart_3_img.jpg";
+import image_for_home_1 from "../assets/image_for_home_1.png";
 
 export default function Home() {
   return (
@@ -44,7 +45,6 @@ export default function Home() {
       </section>
 
       <section className="Store_name">
-        
         <p>
           Only we give the lowest prices for our products, and if you find it
           even cheaper, we will lower the price even more.
