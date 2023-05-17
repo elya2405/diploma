@@ -2,12 +2,11 @@ import { addDoc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { categoryCollection } from "../../firebase";
 import { AppContext } from "../../App";
-import { uploadCategoryPhoto } from "../../firebase";
 
-export default function AddCategory({}) {
+const AddCategory = () => {
   const { user } = useContext(AppContext);
   const [category, setCategory] = useState("");
-  const [picture, setPicture] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
     return null;
@@ -17,11 +16,6 @@ export default function AddCategory({}) {
     setCategory(event.target.value);
   }
 
-  function onChangePicture(event) {
-    const file = event.target.files[0];
-    setPicture(file);
-  }
-
   function onAddCategory() {
     const name = category.trim();
 
@@ -29,25 +23,20 @@ export default function AddCategory({}) {
       alert(
         "Please provide a category name with minimum length of 5 characters."
       );
-
+      
       return;
     }
-    uploadCategoryPhoto(picture)
-        .then((pictureUrl) =>
-          addDoc(categoryCollection, {
-            name: name,
-            picture: pictureUrl,
-            path: name.replaceAll(" ", "-").toLocaleLowerCase(),
-          })
-        )
-        .then(() => {
-          setName("");
 
-          setPicture(null);
-        })
-        .catch((error) => {
-          console.log("Failed to add category:", error);
-        });
+    setIsSubmitting(true);
+
+    addDoc(categoryCollection, {
+      name: name,
+      path: name.replaceAll(" ", "-").toLocaleLowerCase(),
+    }).then(() => {
+      setCategory("");
+    }).finally(() => {
+      setIsSubmitting(false);
+    });
   }
 
   return (
@@ -59,13 +48,9 @@ export default function AddCategory({}) {
         placeholder="Category name"
         onChange={onChangeCategory}
       />
-
-      <label>
-        Picture:
-        <input type="file" name="picture" onChange={onChangePicture} required />
-      </label>
-
-      <button onClick={onAddCategory}>+</button>
+      <button onClick={onAddCategory} disabled={isSubmitting}>+</button>
     </div>
   );
-}
+};
+
+export default AddCategory;
