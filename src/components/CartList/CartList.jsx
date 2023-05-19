@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartList.css";
+import icon_for_delete from "../../assets/icon_for_delete.png";
 
 export default function CartList() {
   // получить продукты и содердижимое корзины
@@ -25,7 +26,11 @@ export default function CartList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem">
-        <img className="Product_picture" src={product.picture} alt={product.name} />
+        <img
+          className="Product_picture"
+          src={product.picture}
+          alt={product.name}
+        />
         <Link className="Product_name" to={"/product/" + product.slug}>
           {product.name}
         </Link>
@@ -38,9 +43,10 @@ export default function CartList() {
         <span className="Product_price">
           {product.price * cart[product.id]} ${" "}
         </span>
-        <img className="Delete_icon"
+        <img
+          className="Delete_icon"
           onClick={() => onRemoveClick(product)}
-          src="src/assets/icon_for_delete.png"
+          src={icon_for_delete}
           alt=""
         />
       </div>
