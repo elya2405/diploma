@@ -25,16 +25,24 @@ export default function CartList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem">
-        <img src={product.picture} alt={product.name} />
-        <Link to={"/product/" + product.slug}>{product.name}</Link>
+        <img className="Product_picture" src={product.picture} alt={product.name} />
+        <Link className="Product_name" to={"/product/" + product.slug}>
+          {product.name}
+        </Link>
         <input
           type="number"
           min={1}
           onChange={(event) => onQtyChange(product, +event.target.value)}
           value={cart[product.id]}
         />
-        <span>{product.price * cart[product.id]} som</span>
-        <button onClick={() => onRemoveClick(product)}>Remove</button>
+        <span className="Product_price">
+          {product.price * cart[product.id]} ${" "}
+        </span>
+        <img className="Delete_icon"
+          onClick={() => onRemoveClick(product)}
+          src="src/assets/icon_for_delete.png"
+          alt=""
+        />
       </div>
     ));
 
