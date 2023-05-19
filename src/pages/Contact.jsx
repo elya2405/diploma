@@ -1,7 +1,12 @@
+import image_for_contact_header from "../assets/image_for_contact_header.jpg";
 export default function Contact() {
   return (
     <div className="Contact">
-      <p>+996 700 133 094</p>
+      <img
+        className="Image_for_contact_header"
+        src={image_for_contact_header}
+        alt=""
+      />
     </div>
   );
 }
