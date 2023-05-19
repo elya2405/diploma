@@ -34,7 +34,7 @@ export default function OrderForm() {
   }
 
   if (!user) {
-    return "Please login";
+    return <div className="Login">"Please login"</div>;
   }
 
   return (
