@@ -6,6 +6,7 @@ import CartLink from "../CartLink/CartLink";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
 import Logo from "./Logo/Logo";
+import CategoryList from "../CategoryList/CategoryList";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -26,8 +27,10 @@ export default function Layout(props) {
         <Auth />
         <CartLink />
       </header>
+      
 
       <main>{props.children}</main>
+      
 
       <footer>FOOTER</footer>
     </div>
