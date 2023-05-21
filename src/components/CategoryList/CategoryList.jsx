@@ -16,7 +16,7 @@ export default function CategoryList() {
       <li key={category.id}>
         <NavLink className="Category" to={"/category/" + category.path}>
           <img src={category.picture} alt={category.name} />
-          {category.name}
+          <div className="Category_name">{category.name}</div>
         </NavLink>
         <DeleteCategory category={category} />
       </li>
