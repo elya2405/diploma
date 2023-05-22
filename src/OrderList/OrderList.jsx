@@ -18,17 +18,17 @@ export default function OrderList() {
 
       return (
         <div>
-          {product.name}: {order.cart[product.id]} X {product.price} $ = {order.cart[product.id] * product.price} $
+          {product.name}: {order.cart[product.id]} X {product.price} som = {order.cart[product.id] * product.price} som
         </div>
       );
     });
 
     return (
       <div className="Order">
-        <div>Name :  {order.name}</div>
-        <div>Phone :  {order.phone}</div>
-        <div>Address :  {order.address}</div>
-        <div>Cart :  {cart}</div>
+        <div><strong>Name</strong>: {order.name}</div>
+        <div><strong>Phone</strong>: {order.phone}</div>
+        <div><strong>Address</strong>: {order.address}</div>
+        <div><strong>Cart</strong>: {cart}</div>
       </div>
     );
   });
