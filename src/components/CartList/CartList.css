@@ -8,7 +8,8 @@
   margin: 20px 0;
 }
 .CartList .CartItem .Product_picture {
-  width: 150px;
+  width: 130px;
+  height: 190px;
   border-radius: 3px;
   border: 1px solid grey;
 }
