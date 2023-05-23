@@ -61,7 +61,7 @@
 }
 .Layout footer {
   flex: 100% 0 0;
-  height: 300px;
+ height: 200px;
   background-color: grey;
 }
 .Layout .Together {
