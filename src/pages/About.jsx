@@ -1,5 +1,6 @@
 import image_for_about_header from "../assets/image_for_about_header.jpg";
 import "./About.css";
+import video_for_about_1 from "../assets/video_2023-05-22_20-20-57.mp4";
 export default function About() {
   return (
     <div className="About">
@@ -9,7 +10,7 @@ export default function About() {
         <div>
           <video className="Video_media" autoPlay muted loop>
             <source
-              src="src/assets/video_2023-05-22_20-20-57.mp4"
+              src={video_for_about_1}
               type="video/mp4"
             />
           </video>
