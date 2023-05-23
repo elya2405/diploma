@@ -30,14 +30,9 @@ export default function Auth() {
     output = (
       <span>
         <div className="SignOut">
-          <img
-            onClick={logOut}
-            className="SignOut"
-            src={icon_2}
-            alt="sign out"
-          />
-          <Link className="User" to="/orders">
-            {user.displayName}
+          <Link className="Auth_link" to="/orders">
+            <img src={user.photoURL} alt={user.displayName} />
+            <div className="User">{user.displayName}</div>
           </Link>
         </div>
       </span>

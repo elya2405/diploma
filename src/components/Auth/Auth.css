@@ -16,11 +16,13 @@
   flex-direction: column;
 }
 .Auth .SignOut img {
-  width: 80px;
-  margin-top: 15px;
+  width: 45px;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 .Auth .SignOut .User {
-  text-decoration: none;
   color: black;
-  margin-left: 10px;
+}
+.Auth_link {
+text-decoration: none;
 }
