@@ -1,0 +1,19 @@
+.Video_for_about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Video_media {
+  height: 700px;
+  width: 100%;
+  border: none;
+}
+.Welcome {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  width: 50%;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+}
