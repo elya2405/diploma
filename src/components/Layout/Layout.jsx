@@ -7,6 +7,7 @@ import Nav from "../Nav/Nav";
 import "./Layout.css";
 import Logo from "./Logo/Logo";
 import CategoryList from "../CategoryList/CategoryList";
+import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -32,7 +33,7 @@ export default function Layout(props) {
       <main>{props.children}</main>
       
 
-      <footer>FOOTER</footer>
+      <footer><Footer/></footer>
     </div>
   );
 }
