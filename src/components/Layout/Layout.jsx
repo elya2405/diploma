@@ -17,24 +17,22 @@ export default function Layout(props) {
   }
   return (
     <div className="Layout">
-      <div className="container">
-        <header>
-          <Nav />
-          <div className="Store">
-            <Logo />
-            <span>Sportwear Store</span>
-          </div>
-          <NavToggle callback={toggleDrawer} />
-          <Drawer open={drawerOpen} toggle={toggleDrawer} />
-          <Auth />
-          <CartLink />
-        </header>
+      <header>
+        <Nav />
+        <div className="Store">
+          <Logo />
+          <span>Sportwear Store</span>
+        </div>
+        <NavToggle callback={toggleDrawer} />
+        <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        <Auth />
+        <CartLink />
+      </header>
 
-        <main>{props.children}</main>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+      <main>{props.children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
