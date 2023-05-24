@@ -13,14 +13,15 @@
 }
 .CategoryList img {
   width: 200px;
+  height: 200px;
 }
 .CategoryList .Category {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.CategoryList h1 { 
+.CategoryList h1 {
   text-align: center;
   color: black;
-  text-transform: uppercase;
+ 
 }
