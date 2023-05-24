@@ -11,7 +11,7 @@ function Footer() {
         <div className="icons">
           <a
             className="instagram"
-            href="https://www.instagram.com/kyliecosmetics/"
+            href="https://www.instagram.com/puma/"
             target="_blank"
             rel="noreferrer"
           >
@@ -28,7 +28,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://twitter.com/kyliecosmetics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            href="https://twitter.com/PUMA"
             target="_blank"
             rel="noreferrer"
           >
@@ -44,7 +44,7 @@ function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/KylieCosmetics/?locale=ru_RU"
+            href="https://ru-ru.facebook.com/PUMA/"
             target="_blank"
             rel="noreferrer"
           >
