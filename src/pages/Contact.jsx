@@ -1,4 +1,4 @@
-import image_for_contact_header from "../assets/image_for_contact_header.jpg";
+import image_for_contact_header from "../assets/image_for_contact_header.png";
 export default function Contact() {
   return (
     <div className="Contact">
