@@ -5,6 +5,7 @@ import image_for_cart_1 from "../assets/cart_1_img.jpg";
 import image_for_cart_2 from "../assets/cart_2_img.jpg";
 import image_for_cart_3 from "../assets/cart_3_img.jpg";
 import image_for_cart_4 from "../assets/cart_4_img.jpg";
+import video_for_home_1 from "../assets/video_2023-05-23_20-26-20.mp4";
 
 export default function Home() {
   return (
@@ -63,6 +64,16 @@ export default function Home() {
           </div>
           <div className="Cart_4_img">
             <img src={image_for_cart_4} alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="Video_for_home">
+          <div>
+            <video className="Video_media_home" autoPlay muted loop>
+              <source src={video_for_home_1} type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
