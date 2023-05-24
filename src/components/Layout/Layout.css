@@ -1,12 +1,12 @@
 .Layout {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 .Layout header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-basis: 100%;
   flex-grow: 0;
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 50px;
+  left: 30px;
 }
 .Layout .Store span {
   margin-top: -15px;
