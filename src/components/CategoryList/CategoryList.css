@@ -42,3 +42,6 @@
 .Hover_for_category:hover {
   box-shadow: 0 0 10 rgb(74, 74, 124);
 }
+.Category h1 {
+  text-align: center;
+}
