@@ -13,9 +13,9 @@ export default function CategoryList() {
   const output = categories
     .sort((a, b) => a.weight - b.weight)
     .map((category) => (
-      <li key={category.id}>
-        <NavLink className="Category" to={"/category/" + category.path}>
-          <img src={category.picture} alt={category.name} />
+      <li className="Hover_for_category" key={category.id}>
+        <NavLink className="Categoryyy" to={"/category/" + category.path}>
+         <div className="Category_img"><img src={category.picture} alt={category.name} /></div> 
           <div className="Category_name">{category.name}</div>
         </NavLink>
         <DeleteCategory category={category} />
