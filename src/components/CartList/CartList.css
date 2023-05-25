@@ -3,7 +3,7 @@
 }
 .CartList .CartItem {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 20px 0;
 }
@@ -22,8 +22,9 @@
 }
 .CartList .CartItem .Product_name {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 20px;
+  width: 10%;
 }
 .CartList input {
   padding: 10px;
