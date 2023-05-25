@@ -11,7 +11,6 @@
   text-align: center;
   font-size: 16px;
   color: rgb(1, 1, 1);
-  
 }
 .Product .Product_img img {
   width: 170px;
@@ -38,14 +37,26 @@
   flex-wrap: wrap;
 }
 .Category_name a {
-  color: white;
-  padding: 10px 20px;
-  background-color: rgb(99, 99, 99);
+  color: black;
+  padding: 10px 30px;
+  background-color: rgb(205, 205, 209);
   border-radius: 3px;
   font-size: 20px;
   text-decoration: none;
   display: block;
   text-align: center;
+}
+.Category_name a:hover {
+  box-shadow: 0 0 5px rgb(45, 45, 169);
+  cursor: pointer;
+  background-color: rgb(149, 149, 214);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.Category_name a:focus {
+  background-color: rgb(76, 76, 125);
+  color: white;
+  transform: scale(1.1);
 }
 .Category_name li {
   list-style-type: none;
