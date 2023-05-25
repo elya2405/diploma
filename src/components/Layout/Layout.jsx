@@ -6,7 +6,6 @@ import CartLink from "../CartLink/CartLink";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
 import Logo from "./Logo/Logo";
-import CategoryList from "../CategoryList/CategoryList";
 import Footer from "../Footer/Footer";
 
 export default function Layout(props) {

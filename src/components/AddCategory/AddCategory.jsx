@@ -23,7 +23,7 @@ const AddCategory = () => {
       alert(
         "Please provide a category name with minimum length of 5 characters."
       );
-      
+
       return;
     }
 
@@ -32,11 +32,13 @@ const AddCategory = () => {
     addDoc(categoryCollection, {
       name: name,
       path: name.replaceAll(" ", "-").toLocaleLowerCase(),
-    }).then(() => {
-      setCategory("");
-    }).finally(() => {
-      setIsSubmitting(false);
-    });
+    })
+      .then(() => {
+        setCategory("");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   }
 
   return (
@@ -48,7 +50,9 @@ const AddCategory = () => {
         placeholder="Category name"
         onChange={onChangeCategory}
       />
-      <button onClick={onAddCategory} disabled={isSubmitting}>+</button>
+      <button onClick={onAddCategory} disabled={isSubmitting}>
+        +
+      </button>
     </div>
   );
 };

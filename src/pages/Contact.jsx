@@ -1,6 +1,5 @@
 import image_for_contact_header from "../assets/image_for_contact_header.png";
 import "./Contact.css";
-import image_for_contact from "../assets/image_for_contact.jpeg";
 export default function Contact() {
   return (
     <div className="Contact">
@@ -100,7 +99,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

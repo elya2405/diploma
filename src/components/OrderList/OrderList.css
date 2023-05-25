@@ -1,9 +1,9 @@
-.OrderList .Order{
-  border: 2px solid rgb(101, 43, 43);
+.OrderList .Order {
+  border: 2px solid rgb(83, 108, 176);
   margin: 25px;
-  padding: 15px ;
+  padding: 15px;
   display: inline-block;
   border-radius: 15px;
-  background-color: rgb(251, 235, 235);
+  background-color: #1d1d6e;
   color: rgb(101, 43, 43);
 }

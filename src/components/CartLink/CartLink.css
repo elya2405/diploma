@@ -6,8 +6,8 @@
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   .CartLink img {
-    width:25px;
+    width: 25px;
   }
 }

@@ -24,9 +24,9 @@
   color: black;
 }
 .Auth_link {
-text-decoration: none;
+  text-decoration: none;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .Auth .SignOut img {
     width: 30px;
   }

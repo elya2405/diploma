@@ -15,7 +15,9 @@ export default function CategoryList() {
     .map((category) => (
       <li className="Hover_for_category" key={category.id}>
         <NavLink className="Categoryyy" to={"/category/" + category.path}>
-         <div className="Category_img"><img src={category.picture} alt={category.name} /></div> 
+          <div className="Category_img">
+            <img src={category.picture} alt={category.name} />
+          </div>
           <div className="Category_name">{category.name}</div>
         </NavLink>
         <DeleteCategory category={category} />

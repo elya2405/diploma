@@ -20,7 +20,7 @@ export default function Product() {
       <h1>{product.name}</h1>
       <div className="display_product">
         <img src={product.picture} alt={product.name} />
-       
+
         <p>
           We offer a wide range of high-quality sportswear created for an active
           lifestyle. Our sportswear combines stylish design, comfort and
@@ -29,8 +29,6 @@ export default function Product() {
         </p>
         <span>{product.price} $</span>
         <AddToCart product={product} />
-        
-        
       </div>
     </div>
   );

@@ -37,7 +37,6 @@
   margin-top: 10px;
 }
 .Category_name {
-  
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -70,8 +69,8 @@
 .ProductList {
   margin: 30px 60px;
 }
-@media screen and (max-width:600px) {
-  .Category_name a{
+@media screen and (max-width: 600px) {
+  .Category_name a {
     font-size: 16px;
     margin-left: -50px;
     margin: 10px;

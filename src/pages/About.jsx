@@ -32,10 +32,12 @@ export default function About() {
         </div>
 
         <div className="Cart_about_2">
-          
           <div className="Cart_about_2_content">
             <p>
-            Our sellers are experts in the field of sports fashion and are always ready to help you with the selection of suitable products. We strive to create a friendly and inspiring atmosphere so that you can enjoy shopping in our store.
+              Our sellers are experts in the field of sports fashion and are
+              always ready to help you with the selection of suitable products.
+              We strive to create a friendly and inspiring atmosphere so that
+              you can enjoy shopping in our store.
             </p>
           </div>
           <div className="Cart_about_1_img">
@@ -53,7 +55,10 @@ export default function About() {
 
         <div className="Welcomee">
           <p>
-          At the "Sportwear store" we pay special attention to meeting the needs of our customers. We strive to provide a high level of service, fast delivery and quality assurance for all our products. Your satisfaction is our priority.
+            At the "Sportwear store" we pay special attention to meeting the
+            needs of our customers. We strive to provide a high level of
+            service, fast delivery and quality assurance for all our products.
+            Your satisfaction is our priority.
           </p>
         </div>
       </div>
