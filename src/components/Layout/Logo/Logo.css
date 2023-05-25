@@ -1,3 +1,11 @@
 .Logo img {
   width: 100px;
 }
+@media screen and (max-width: 600px) {
+  .Logo img {
+    width: 60px;
+  }
+  .Store span {
+    font-size: 10px;
+  }
+}

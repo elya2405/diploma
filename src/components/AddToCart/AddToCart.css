@@ -2,6 +2,13 @@
   padding: 5px 20px;
   border: 1px solid grey;
   border-radius: 3px;
-  background-color: #686378;
+  background-color: #5e5776;
   color: white;
+}
+.AddToCart button:hover {
+  box-shadow: 0 0 5px rgb(45, 45, 169);
+  cursor: pointer;
+  background-color: rgb(163, 163, 210);
+  color: black;
+  transition: 0.3s;
 }

@@ -72,7 +72,7 @@
 .Layout footer {
   flex: 100% 0 0;
   height: 330px;
-  background-color: rgb(124, 145, 177);
+  background-color: rgb(153, 170, 196);
 }
 .Layout .Together {
   display: flex;
@@ -81,5 +81,8 @@
 @media (max-width: 650px) {
   .Layout header > .Nav {
     display: none;
+  }
+  .Layout footer {
+    height: 500px;
   }
 }

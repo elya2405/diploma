@@ -4,5 +4,10 @@
 .CartLink a {
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width:600px){
+  .CartLink img {
+    width:25px;
+  }
 }

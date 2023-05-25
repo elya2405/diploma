@@ -12,7 +12,10 @@
   text-decoration: none;
   text-align: center;
   font-size: 16px;
+  margin-bottom: 15px;
   color: rgb(1, 1, 1);
+  font-weight: 600;
+  margin-top: 50px;
 }
 .Product .Product_img img {
   width: 170px;
@@ -34,12 +37,13 @@
   margin-top: 10px;
 }
 .Category_name {
+  
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .Category_name a {
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 10px 30px;
   background-color: rgb(205, 205, 209);
   border-radius: 3px;
@@ -56,7 +60,7 @@
   transition: 0.3s;
 }
 .Category_name a:focus {
-  background-color: rgb(76, 76, 125);
+  background-color: rgb(149, 149, 214);
   color: white;
   transform: scale(1.1);
 }
