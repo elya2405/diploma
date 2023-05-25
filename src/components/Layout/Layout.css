@@ -4,10 +4,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-/*.container {
-  display: flex;
-  flex-wrap: wrap;
-}*/
 .Layout header {
   display: flex;
   justify-content: space-around;
@@ -66,21 +62,17 @@
   opacity: 0.8;
   color: white;
   text-align: center;
-  /*position: relative;
-  /*top: -250px;*/
-  /*padding: 1px 0;*/
 }
 .Layout aside {
   flex: 100% 0 0;
-  /*margin-top: -60px;*/
 }
 .Layout main {
   flex: auto 1 1;
 }
 .Layout footer {
   flex: 100% 0 0;
-  height: 300px;
-  background-color: grey;
+  height: 330px;
+  background-color: rgb(124, 145, 177);
 }
 .Layout .Together {
   display: flex;
