@@ -1,9 +1,9 @@
-.Footer_ {
+.Footer_begin {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(28, 48, 76);
 }
 .icon {
   color: white;
@@ -14,22 +14,22 @@
   height: 30px;
 }
 .icon:hover {
-  transition: 0.9s;
-}
-.icon a {
-  margin: auto;
-  padding: 20px;
-}
-.icon:hover a {
-  animation: shake 0.25s;
-  transition: 0.1s;
+  transition: 0.3s;
+  transform: scale(1.2);
+  color: rgb(124, 145, 177);
+  cursor: pointer;
 }
 .Explore ul {
   list-style-type: none;
 }
-.Explore a {
+.Explore ul a {
   text-decoration: none;
-  margin-bottom: 10px;
+}
+.Explore a:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+  color:  rgb(28, 48, 76);
+  cursor: pointer;
 }
 .Categoryy ul {
   list-style-type: none;
@@ -37,9 +37,16 @@
 .Categoryy a {
   text-decoration: none;
 }
+.Categoryy a:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+  color:  rgb(28, 48, 76);
+  cursor: pointer;
+}
 .Footer_content {
   display: flex;
   justify-content: space-around;
+  padding-top: 30px;
 }
 .Footer_content h3 {
   color: rgb(65, 65, 65);
@@ -50,6 +57,12 @@
 }
 .Contactt a {
   text-decoration: none;
+}
+.Contactt a:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+  color: rgb(28, 48, 76);
+  cursor: pointer;
 }
 .Contactt svg {
   margin-right: 10px;
@@ -77,7 +90,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  
+
   color: rgb(65, 65, 65);
   font-size: 16px;
 }
