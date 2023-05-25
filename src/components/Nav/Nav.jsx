@@ -1,7 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-export default function Nav(props) {
+export default function Nav() {
+  let menuBtn = document.querySelectorAll(".Nav a");
+  let menu = document.querySelector(".Drawer");
+  menuBtn.forEach((el) => {
+    el.addEventListener("click", function () {
+      menu.classList.remove("open");
+    });
+  });
   return (
     <nav className="Nav">
       <ul>
