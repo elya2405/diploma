@@ -7,7 +7,7 @@ function Footer() {
   }
   return (
     <footer className="Footer ">
-      <div className="Footer_">
+      <div className="Footer_begin">
         <div className="icons">
           <a
             className="instagram"
@@ -163,7 +163,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="Footer_end">
+      <div className="Footer_end Layout">
         <div className="Footer_span">
           <strong>All rights reserved</strong> © PUMA SE 2023
         </div>
