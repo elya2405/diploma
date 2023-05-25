@@ -1,7 +1,21 @@
+.Category_img img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.Categoryyy:hover {
+  color: rgb(48, 48, 140);
+}
+.Categoryyy img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s;
+}
 .CategoryList ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   margin-left: -35px;
 }
@@ -9,11 +23,12 @@
   text-decoration: none;
   color: black;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 }
-.CategoryList img {
-  width: 200px;
-  height: 200px;
+.Category_name {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .CategoryList .Category {
   display: flex;
@@ -23,5 +38,7 @@
 .CategoryList h1 {
   text-align: center;
   color: black;
- 
+}
+.Hover_for_category:hover {
+  box-shadow: 0 0 10 rgb(74, 74, 124);
 }
