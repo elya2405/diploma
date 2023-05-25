@@ -70,3 +70,21 @@
   line-height: 2;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .Welcome p {
+    font-size: 20px;
+  }
+  .Cart_about_1_img img {
+    width: 250px;
+  }
+  .Cart_about_1_content p {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+  .Cart_about_2_content p {
+    font-size: 16px;
+  }
+  .Welcomee {
+    font-size: 16px;
+  }
+}

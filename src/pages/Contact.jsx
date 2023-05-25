@@ -100,9 +100,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="contact_photo">
-        <img src={image_for_contact} alt="" />
-      </div>
+      
     </div>
   );
 }
