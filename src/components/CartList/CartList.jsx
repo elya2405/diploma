@@ -31,7 +31,7 @@ export default function CartList() {
           src={product.picture}
           alt={product.name}
         />
-        <Link className="Product_name" to={"/product/" + product.slug}>
+        <Link className="Product_name" to={"/product/" + product.path}>
           {product.name}
         </Link>
         <input
